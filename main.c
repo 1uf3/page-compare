@@ -35,8 +35,8 @@ double page_xor_cmp() {
 
     int result = 0;
 
-    for (size_t i = 0; i < PAGE_SIZE; ++i) {
-        result = page1[i] ^ page2[i];
+    for (size_t i = 0; i < PAGE_SIZE; i=(i+1)*8) {
+        result = (uint64_t)page1[i] ^ (uint64_t)page2[i];
     }
 
     if (!result) {

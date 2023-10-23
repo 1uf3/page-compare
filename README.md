@@ -7,7 +7,7 @@ $ gcc -lcrypto main.c
 
 ```result
 =================================================
-page_xor_cmp() Execution Time: 0.000009s
+page_xor_cmp() Execution Time: 0.000001s
 =================================================
 page_memcmp() Execution Time: 0.000001s
 =================================================
